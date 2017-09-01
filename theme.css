@@ -94,9 +94,9 @@ button.btn {
 }
 
 button.btn:hover {
-    background-color: #555 ;
-    background-image: -webkit-linear-gradient(rgba(86,86,86,0.96), rgba(86,86,86,0.96)),-webkit-linear-gradient(bottom, rgba(100,100,100,.23) 0%, rgba(255,255,255,.1) 100%) ;
-    box-shadow: none ;
+    background-color: #555 !important;
+    background-image: -webkit-linear-gradient(rgba(86,86,86,0.96), rgba(86,86,86,0.96)),-webkit-linear-gradient(bottom, rgba(100,100,100,.23) 0%, rgba(255,255,255,.1) 100%) !important;
+    box-shadow: none !important;
     border-radius: 4px;
 }
 
@@ -160,11 +160,11 @@ tr.server-container {
 }
 
 tr.server-container td {
-    border-color: transparent ;
+    border-color: transparent !important;
 }
 
 tr.server-container td+td {
-    color: #ddd ;
+    color: #ddd !important;
 }
 
 tr.server-container .highlight {
@@ -176,7 +176,7 @@ tr.server-container .highlight {
 #dataexplorer .input_query_full_container .input_query_container .CodeMirror {
     background: #222;
     border-color: #333;
-    padding: 0 ;
+    padding: 0 !important;
 }
 
 #dataexplorer .input_query_full_container .input_query_container .CodeMirror .CodeMirror-gutter {
@@ -215,27 +215,27 @@ tr.server-container .highlight {
 }
 
 .CodeMirror-wrap pre, .cm-property, .cm-variable, .cm-def {
-    color: #ddd ;
+    color: #ddd !important;
 }
 
 .CodeMirror-selected {
-    background-color: #111 ;
+    background-color: #111 !important;
 }
 
 .CodeMirror-cursor {
-    border-left-color: #fff ;
+    border-left-color: #fff !important;
 }
 
 .cm-string, .cm-number, .jt_string {
-    color: #2aa198 ;
+    color: #2aa198 !important;
 }
 
 .jt_num {
-    color: #2c63c2 ;
+    color: #2c63c2 !important;
 }
 
 .cm-keyword {
-    color: #859900 ;
+    color: #859900 !important;
 }
 
 #dataexplorer .result_view .tab-content {
