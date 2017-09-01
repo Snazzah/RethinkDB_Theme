@@ -1,0 +1,289 @@
+/* Top Bar */
+
+#topbar {
+    background: #444;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    border: none;
+}
+
+#topbar .panel h4, .dashboard-container .cluster-status .panel div h3, #main-container .section h2.title {
+    color: #fff;
+}
+
+#sticky-wrap {
+    min-width: 940px;
+    background: #222;
+}
+
+/* Main Section */
+
+#main-container .section, #footer {
+    border-color: #333;
+    background-color: #313131;
+}
+
+.dashboard-container .cluster-status .panel, .no_element {
+    border: none;
+}
+
+.dashboard-container .cluster-status .panel+.panel {
+    border-left: thin solid #444;
+}
+
+.dashboard-container .cluster-status .panel li span {
+    color: #ddd;
+}
+
+.dashboard-container .cluster-status .panel li {
+    color: #888;
+}
+
+#log-view ul.log-entries li.log-entry , .dashboard-container .recent-logs > h2.title {
+    color: #ddd;
+    border-color: #444;
+}
+
+.no_element {
+    color: #777;
+    background: #444;
+}
+
+.dashboard-container .ops-plot .plot-container {
+    background-color: #444;
+    border: none;
+}
+
+.dashboard-container .ops-plot .ops-plot-legend .element {
+    border-color: #fff;
+}
+
+.dashboard-container .ops-plot .ops-plot-legend .outer-circle {
+    border: none;
+    border-radius: 50%;
+}
+
+.dashboard-container .ops-plot .ops-plot-legend .color {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    margin: 0;
+}
+
+/* Dropdown */
+
+.dropdown-menu {
+    background-color: #494949;
+    border-color: transparent;
+}
+
+.dropdown-menu a {
+    color: #fff;
+    font-weight: bold;
+    font-family: "Copse";
+}
+
+/* Tables Section */
+
+button.btn {
+    color: #fff;
+    border-color: transparent;
+    background-color: #444;
+    text-shadow: none;
+}
+
+button.btn:hover {
+    background-color: #555 ;
+    background-image: -webkit-linear-gradient(rgba(86,86,86,0.96), rgba(86,86,86,0.96)),-webkit-linear-gradient(bottom, rgba(100,100,100,.23) 0%, rgba(255,255,255,.1) 100%) ;
+    box-shadow: none ;
+    border-radius: 4px;
+}
+
+#databases_container .database_container .header_container {
+    border: none;
+    background: #353535;
+}
+
+#databases_container .database_container .element-list-container {
+    background: #333;
+}
+
+#databases_container .database_container .table_container {
+    background: #444;
+    border: none;
+}
+
+#databases_container .database_container .table_container .element-details [class] {
+    border-color: #333;
+    color: #fff;
+}
+
+#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:checked + label:after {
+    color: #fff;
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+}
+
+#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:not(:checked) + label:after {
+    content: '';
+    opacity: 0;
+    transition: all 0.2s ease;
+}
+
+#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:checked + label {
+    background: #2ecc71;
+    border-color: #2ecc71;
+    transition: all 0.2s ease;
+}
+
+#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:not(:checked) + label {
+    background: transparent;
+    border-color: #ddd;
+    transform: scale(0.8);
+    transition: all 0.2s ease;
+}
+
+#databases_container .database_container .header_container .element-type {
+    font-family: "Copse";
+}
+
+h1.title, #databases_container .database_container .header_container h3.name {
+    color: #fff;
+}
+
+/* Servers Menu */
+
+tr.server-container {
+    background: #444;
+    border-color: transparent;
+}
+
+tr.server-container td {
+    border-color: transparent ;
+}
+
+tr.server-container td+td {
+    color: #ddd ;
+}
+
+tr.server-container .highlight {
+    color: #fff;
+}
+
+/* Data Explorer Menu */
+
+#dataexplorer .input_query_full_container .input_query_container .CodeMirror {
+    background: #222;
+    border-color: #333;
+    padding: 0 ;
+}
+
+#dataexplorer .input_query_full_container .input_query_container .CodeMirror .CodeMirror-gutter {
+    background: #444;
+    border-right-color: #444;
+}
+
+.CodeMirror-gutters {
+    border-right-color: #333;
+}
+
+#dataexplorer .toggled_container .nano .content .history_container .history_list .query_history:hover {
+    color: #999;
+}
+
+#dataexplorer .toggled_container .nano .content .history_container .history_list .query_history {
+    color: #777;
+    border-bottom-color: #444;
+}
+
+#dataexplorer .toggled_container .nano .content .history_container .history_list .query_history .query_history_content .right_container {
+    position: absolute;
+    transform: translateY(-13px);
+}
+
+#dataexplorer .toggled_container .nano .content .history_container .history_list .query_history:last-of-type {
+    margin-bottom: 1px;
+}
+
+#dataexplorer .toggled_container .nano_border {
+    border-top-color: #666;
+}
+
+#dataexplorer .toggled_container .arrow_dataexplorer {
+    border-bottom-color: #666;
+}
+
+.CodeMirror-wrap pre, .cm-property, .cm-variable, .cm-def {
+    color: #ddd ;
+}
+
+.CodeMirror-selected {
+    background-color: #111 ;
+}
+
+.CodeMirror-cursor {
+    border-left-color: #fff ;
+}
+
+.cm-string, .cm-number, .jt_string {
+    color: #2aa198 ;
+}
+
+.jt_num {
+    color: #2c63c2 ;
+}
+
+.cm-keyword {
+    color: #859900 ;
+}
+
+#dataexplorer .result_view .tab-content {
+    background-color: #414141;
+    border-radius: 4px;
+}
+
+#dataexplorer .results .json_tree .jt_object {
+    color: #fff;
+}
+
+#dataexplorer .results .json_tree .jt_points_collapsed {
+    color: #999;
+}
+
+#dataexplorer .nav-tabs {
+    border: none;
+}
+
+#dataexplorer .result_view {
+    overflow: visible;
+}
+
+#dataexplorer .change_view_container li.active a {
+    border-color: transparent;
+    background-color: #414141;
+    color: #fff;
+    padding-bottom: 15px;
+    margin-bottom: -15px;
+    transform: translateY(-7px);
+}
+
+#dataexplorer .change_view_container li a {
+    font-family: "Copse";
+    background-color: #373737;
+    padding-bottom: 2px;
+}
+
+#dataexplorer .change_view_container li:not(.active):hover a {
+    font-family: "Copse";
+    border-color: transparent;
+    background-color: #3b3b3b;
+    color: #71bbe0;
+    padding-bottom: 10px;
+    margin-bottom: -10px;
+    transform: translateY(-7px);
+}
+
+#dataexplorer .results .json_tree .jt_object {
+    border-left-color: #555 !important;
+}
