@@ -325,3 +325,34 @@ tr.server-container .highlight {
     border-radius: 5px;
     padding: 5px;
 }
+
+/* Modal */
+
+
+
+.modal {
+    background-color: #333;
+}
+
+.modal-header, .modal-footer {
+    background-color: #222;
+    border: none;
+}
+
+.modal-footer {
+    box-shadow: none;
+}
+
+.modal-body {
+    border: none;
+}
+
+.modal label, .modal p {
+    color: #ddd;
+}
+
+.modal input {
+    background-color: #222;
+    border-color: #191919;
+    color: #fff;
+}
