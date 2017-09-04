@@ -287,3 +287,41 @@ tr.server-container .highlight {
 #dataexplorer .results .json_tree .jt_object {
     border-left-color: #555 !important;
 }
+
+/* Suggestion Container */
+
+#dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description {
+    background: #222;
+    border-color: #111;
+    box-shadow: none;
+}
+
+#dataexplorer .input_query_full_container .suggestion_description_arrow_overlay {
+    border-bottom-color: #222;
+}
+
+#dataexplorer .input_query_full_container .suggestion_description_arrow {
+    border-bottom-color: #111;
+}
+
+#dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description p .description_name, #dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description code .description_name {
+    color: #fff;
+}
+
+#dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description p .description_arguments, #dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description code .description_arguments {
+    color: #999;
+}
+
+#dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description {
+    color: #ddd;
+}
+
+#dataexplorer .input_query_full_container .suggestion_full_container .suggestion_description strong {
+    color: #ededed;
+}
+
+#dataexplorer .input_query_full_container .suggestion_full_container pre {
+    background-color: #151515;
+    border-radius: 5px;
+    padding: 5px;
+}
