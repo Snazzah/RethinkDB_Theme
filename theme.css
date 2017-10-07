@@ -91,13 +91,21 @@ button.btn {
     border-color: transparent;
     background-color: #444;
     text-shadow: none;
+    border-radius: 4px;
 }
 
 button.btn:hover {
     background-color: #555 !important;
     background-image: -webkit-linear-gradient(rgba(86,86,86,0.96), rgba(86,86,86,0.96)),-webkit-linear-gradient(bottom, rgba(100,100,100,.23) 0%, rgba(255,255,255,.1) 100%) !important;
     box-shadow: none !important;
-    border-radius: 4px;
+}
+
+button.btn.active {
+    background-color: #666 !important;
+}
+
+#dataexplorer .options_container .close_queries_link.active, #dataexplorer .options_container .toggle_options_link.active {
+    background-color: #666666;
 }
 
 #databases_container .database_container .header_container {
@@ -119,25 +127,25 @@ button.btn:hover {
     color: #fff;
 }
 
-#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:checked + label:after {
-    color: #fff;
+.checkbox-container input[type="checkbox"]:checked + label:after {
+    color: #fff !important;
     transform: scale(0.8);
     transition: all 0.2s ease;
 }
 
-#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:not(:checked) + label:after {
+.checkbox-container input[type="checkbox"]:not(:checked) + label:after {
     content: '';
     opacity: 0;
     transition: all 0.2s ease;
 }
 
-#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:checked + label {
+.checkbox-container input[type="checkbox"]:checked + label {
     background: #2ecc71;
-    border-color: #2ecc71;
+    border-color: #2ecc71 !important;
     transition: all 0.2s ease;
 }
 
-#databases_container .database_container .table_container .checkbox-container input[type="checkbox"]:not(:checked) + label {
+.checkbox-container input[type="checkbox"]:not(:checked) + label {
     background: transparent;
     border-color: #ddd;
     transform: scale(0.8);
@@ -214,30 +222,6 @@ tr.server-container .highlight {
     border-bottom-color: #666;
 }
 
-.CodeMirror-wrap pre, .cm-property, .cm-variable, .cm-def {
-    color: #ddd !important;
-}
-
-.CodeMirror-selected {
-    background-color: #111 !important;
-}
-
-.CodeMirror-cursor {
-    border-left-color: #fff !important;
-}
-
-.cm-string, .cm-number, .jt_string {
-    color: #2aa198 !important;
-}
-
-.jt_num {
-    color: #2c63c2 !important;
-}
-
-.cm-keyword {
-    color: #859900 !important;
-}
-
 #dataexplorer .result_view .tab-content {
     background-color: #414141;
     border-radius: 4px;
@@ -284,8 +268,169 @@ tr.server-container .highlight {
     transform: translateY(-7px);
 }
 
+#dataexplorer .options_view ul li {
+    border-bottom: 1px solid #666666;
+    color: #ddd;
+}
+
+#dataexplorer .options_view ul li:hover {
+    color: #ddd;
+}
+
+#dataexplorer .result_view .results_header .metadata.floating_metadata {
+    border: 1px solid #111;
+    background-color: #222;
+    color: #fff;
+}
+
+/* Data Explorer JSON Tree */
+
+.CodeMirror-wrap pre, .cm-property, .cm-variable, .cm-def {
+    color: #ddd !important;
+}
+
+.CodeMirror-selected {
+    background-color: #111 !important;
+}
+
+.CodeMirror-cursor {
+    border-left-color: #fff !important;
+}
+
+.cm-string, .cm-number, .jt_string {
+    color: #2aa198 !important;
+}
+
+.jt_num {
+    color: #2c63c2 !important;
+}
+
+.cm-keyword {
+    color: #859900 !important;
+}
+
 #dataexplorer .results .json_tree .jt_object {
     border-left-color: #555 !important;
+}
+
+#dataexplorer .results .json_tree .jt_b { color: #fff }
+
+/* Data Explorer Table View */
+
+#dataexplorer .results .json_table_container .json_table .col-record {
+    color: #f1f1f1;
+    background-color: #222;
+}
+
+#dataexplorer .results .json_table_container .json_table .col-record-td {
+    background: #222222;
+}
+
+#dataexplorer .results .json_table_container .json_table td {
+    border: 1px solid #111;
+}
+
+#dataexplorer .results .json_table_container .json_table .td_attr {
+    color: #f9f9f9;
+    background: #222222;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#dataexplorer .results .json_table_container .json_table td {
+    border: 1px solid #111;
+}
+
+#dataexplorer .results .json_table_container .json_table tr:nth-child(odd) {
+    background: #333;
+}
+
+#dataexplorer .results .json_table_container .json_table tr:nth-child(even) {
+    background: #444;
+}
+
+#dataexplorer .results .json_table_container .json_table .jta_value.empty.array {
+    color: #fff;
+}
+
+#dataexplorer .results .json_table_container .json_table .col-record {
+    color: #f1f1f1;
+    background-color: #222;
+}
+
+#dataexplorer .results .json_table_container .json_table .col-record-td {
+    background: #222222;
+}
+
+#dataexplorer .results .json_table_container .json_table td {
+    border: 1px solid #111;
+}
+
+#dataexplorer .results .json_table_container .json_table .td_attr {
+    color: #f9f9f9;
+    background: #222222;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#dataexplorer .results .json_table_container .json_table td {
+    border: 1px solid #111;
+}
+
+#dataexplorer .results .json_table_container .json_table tr:nth-child(odd) {
+    background: #333;
+}
+
+#dataexplorer .results .json_table_container .json_table tr:nth-child(even) {
+    background: #444;
+}
+
+#dataexplorer .results .json_table_container .json_table .jta_value.empty.array {
+    color: #fff;
+}
+
+#dataexplorer .results .json_table_container .json_table .jta_object {
+    color: #fff;
+}
+
+/* Data Explorer Raw View */
+
+#dataexplorer .results .raw_view_container .raw_view_textarea, #dataexplorer .options_view .input-container input {
+    border-color: #313131;
+    color: #fff;
+    font-family: monospace, mono, consolas;
+    background-color: #222;
+}
+
+#dataexplorer .results .raw_view_container, #dataexplorer .result_view .activate_profiler_message, #dataexplorer .results .profile_summary {
+    margin: -0px 5px 5px 5px;
+}
+
+/* Data Explorer Query Profile */
+
+#dataexplorer .result_view .activate_profiler_message, #dataexplorer .results .profile_summary {
+    background: #222222;
+    border: thin solid #222222;
+}
+
+#dataexplorer .results .copy_profile:after {
+    filter: invert();
+}
+
+#dataexplorer .results .copy_profile.zeroclipboard-is-hover {
+    background-color: #555 !important;
+    background-image: -webkit-linear-gradient(rgba(86,86,86,0.96), rgba(86,86,86,0.96)),-webkit-linear-gradient(bottom, rgba(100,100,100,.23) 0%, rgba(255,255,255,.1) 100%) !important;
+    box-shadow: none !important;
+}
+
+#dataexplorer .results .profile_summary p span.big {
+    color: #fff;
+}
+
+#dataexplorer .results .profile_summary p::before {
+    filter: invert();
 }
 
 /* Suggestion Container */
